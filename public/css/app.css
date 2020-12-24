@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@font-face { font-family: 'Aarhus-Handball-Body'; src: url('../fonts/FrutigerLTStd-Roman.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerLTStd-Roman.otf')  format('opentype'), url('../fonts/FrutigerLTStd-Roman.woff') format('woff'), url('../fonts/FrutigerLTStd-Roman.ttf')  format('truetype'), url('../fonts/FrutigerLTStd-Roman.svg#FrutigerLTStd-Roman') format('svg'); font-weight: normal; font-style: normal }
+@font-face { font-family: 'Aarhus-Handball-Headline'; src: url('../fonts/blockbe_regular-webfont.woff2') format('woff2'), url('../fonts/blockbe_regular-webfont.woff') format('woff'); font-weight: normal; font-style: normal }
+@font-face { font-family: 'Aarhus-Handball-Condensed'; src: url('../fonts/blockbecondensed-webfont.woff2') format('woff2'), url('../fonts/blockbecondensed-webfont.woff') format('woff'); font-weight: normal; font-style: normal }
+:root { --blue: #f68b28; --indigo: #6610f2; --purple: #6f42c1; --pink: #e83e8c; --red: #e74a3b; --orange: #fd7e14; --yellow: #f6c23e; --green: #1cc88a; --teal: #20c9a6; --cyan: #36b9cc; --white: #fff; --gray: #858796; --gray-dark: #5a5c69; --primary: #f68b28; --secondary: #858796; --success: #1cc88a; --info: #36b9cc; --warning: #f6c23e; --danger: #e74a3b; --light: #f3efee; --dark: #5a5c69; --breakpoint-xs: 0; --breakpoint-sm: 576px; --breakpoint-md: 768px; --breakpoint-lg: 992px; --breakpoint-xl: 1200px; --font-family-sans-serif: 'Aarhus-Handball-Body', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; --font-family-monospace: 'Aarhus-Handball-Headline', Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace }
+html { font-family: 'Aarhus-Handball-Body'; scroll-behavior: smooth }
+body { font-size: 14px; font-weight: 300; font-family: 'Aarhus-Handball-Body', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; color: #393939; background-color: #f3efee }
+h1, h2, h3, h4, h5, h6 { font-family: 'Aarhus-Handball-Headline', sans-serif !important }
+h4 { text-transform: uppercase }
+.condensed { font-family: 'Aarhus-Handball-Condensed', sans-serif !important; color: #3b3937; font-size: 18px; font-style: normal; font-weight: normal; text-rendering: optimizeLegibility }
+#wrapper #content-wrapper { background-color: #f3efee }
+.color-bg-secondary{background-color: #fa8212}
+.color-bg-light{background-color: #f8f8f8}
+.color-text-secondary{color: #fa8212}
+.n-margin {margin-top: -25px}
+.btn-primary:hover { background-color: #3b3937; border-color: #3b3937 }
+.login-wrapper { min-height: 90vh }
+.login.card {background-color: rgba(255, 255, 255, .5); padding: 3rem; left: 0; right: 0; margin-left: 0; margin-right: 0; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%) }
+.form-label-group { position: relative; margin-bottom: 1rem }
+.form-label-group > input, .form-label-group > input[type="password"], .form-label-group > textarea, .form-label-group > label { padding: .75rem }
+.form-label-group > label { text-align: center !important; font-family: 'Aarhus-Handball-Headline'; text-transform: uppercase; font-weight: normal; position: absolute; top: 0; left: 0; display: block; width: 100%; margin-bottom: 0; line-height: 1.5; color: #0a0a0a; pointer-events: none; cursor: text; border: 1px solid transparent; border-radius: .25rem; transition: all .1s ease-in-out }
+.form-label-group input::-webkit-input-placeholder, .form-label-group textarea::-webkit-input-placeholder { color: transparent }
+.form-label-group input:-ms-input-placeholder, .form-label-group textarea:-ms-input-placeholder { color: transparent }
+.form-label-group input::-ms-input-placeholder, .form-label-group textarea::-ms-input-placeholder { color: transparent }
+.form-label-group input::-moz-placeholder, .form-label-group textarea::-moz-placeholder { color: transparent }
+.form-label-group input::placeholder, .form-label-group textarea::placeholder { color: transparent }
+.form-label-group input:not(:placeholder-shown), .form-label-group textarea:not(:placeholder-shown) { padding-top: 1.25rem; padding-bottom: .25rem }
+.form-label-group input:not(:placeholder-shown) ~ label, .form-label-group textarea:not(:placeholder-shown) ~ label { padding-top: .25rem; padding-bottom: .25rem; font-size: 12px; color: #777 }
+.form-control { text-align: center; height: 48px; display: block; width: 100%; padding: .375rem .75rem; font-size: 16px; line-height: 1.5; color: #0a0a0a; background-color: #fff; background-clip: padding-box; border: 1px solid #fff; border-radius: 0; transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out }
+@supports (-ms-ime-align:auto) {
+	.form-label-group > label { display: none }
+	.form-label-group input::-ms-input-placeholder { color: #777 }
+}
+@media all and (-ms-high-contrast:none), (-ms-high-contrast:active) {
+	.form-label-group > label { display: none }
+	.form-label-group input:-ms-input-placeholder { color: #777 }
+}
+input.btn.btn-primary.btn-block, button.btn.btn-primary.btn-block { height: 48px; border-radius: 0 }
+[type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus, textarea:focus { background-color: #f8f8f8 }
+div#cc select, select, button#up-logo, button#addFile, input[type='file'], input[type='date'] { font-family: 'Aarhus-Handball-Headline'; text-transform: uppercase; font-weight: normal }
+select { height: 48px; font-size: 18px; margin: 0 0 1.25rem; border: 1px solid #fff; min-width: 100% }
+.top-border { border-top: 1px solid rgb(190, 187, 185) }
+.right-border { border-right: 1px solid rgb(190, 187, 185) }
+.bottom-border { border-bottom: 1px solid rgb(190, 187, 185) }
+.left-border { border-left: 1px solid rgb(190, 187, 185) }
+.case-upper, [type=submit] { text-transform: uppercase }
+thead { color: #0a0a0a }
+.table thead th { border: 0; color: #3b3937; font-size: 18px; font-weight: normal; font-family: 'Aarhus-Handball-Condensed', sans-serif !important }
+.table td, .table th { padding: 6px 10px; vertical-align: middle; border-top: 0 }
+.table-hover tbody tr:hover, .table { color: #393939 }
+button#addFile { font-size: 16px; color: #0a0a0a; height: 48px; margin: 0 0 1.25rem; display: block; width: 100%; background-color: transparent; border: 1px solid #767676 }
+.uploader { padding: 0 13px }
+li.dashboard.nav-item.active a { height: 67px; padding: 25px 18px }
+ul.p-thumb { margin: 0; padding: 0; list-style: none }
+ul.p-thumb li { border-radius: 4px;height: 135px; background-size: cover; background-repeat: no-repeat; width: 32%; float: left; margin-top: 1rem; margin-bottom: 1.25rem; margin-right: 3px }
+ul.p-thumb li img {  width: 100% }
+.cart-total { width: 320px; margin-left: auto; margin-right: 0 }
+.sidebar-dark .nav-item .nav-link i { min-width: 20px }
+select#status { min-width: 220px; margin: 0; }
+ul.product-thumb { margin: 0; padding: 0; list-style: none; }
+.view-product-img { width: 120px; height: 120px; background-repeat: no-repeat; background-size: cover; margin: 0 1rem 1rem 0; float: left; }
+.relative { position: relative }
+.absolute { position: absolute }
+.bottom { bottom: 0 }
+.top { top: 0 }
+.hide { display: none }
+.show { display: block }
+.form-label-group.has-error > input.form-control, .form-label-group.has-error > textarea.form-control { border-color: #e74a3b }
+span.help-block.text-danger { display: none; font-size: 80% }
+input[type="password"] { width: 100%; border: 1px solid #fff }
+.u-point select { margin-bottom: 0 }
+
+
+input.btn-create {font-family: 'Aarhus-Handball-Headline', sans-serif;width: 75%;border-radius: 0}
+.switch { position: relative; display: inline-block; padding-left: 60px; line-height: 22px }
+.switch input[type=checkbox] { opacity: 0; width: 0; height: 0 }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; -webkit-transition: .4s; transition: .4s; display: inline-block; width: 50px; height: 22px }
+.slider:before { position: absolute; content: ""; height: 18px; width: 18px; left: 2px; bottom: 2px; background-color: #ff7d00; -webkit-transition: .4s; transition: .4s; display: inline-block }
+input[type=checkbox]:checked + .slider { background-color: #05373c }
+input[type=checkbox]:focus + .slider { box-shadow: 0 0 1px #2196F3 }
+input[type=checkbox]:checked + .slider:before { -webkit-transform: translateX(26px); -ms-transform: translateX(26px); transform: translateX(26px) }
+.slider.round { border-radius: 22px }
+.slider.round:before { border-radius: 50% }
+.custom-file-input ~ .custom-file-label::after { content: "Button Text"; }
+.custom-file-label{position:absolute;top:45px;width:92%;margin:0 auto;border-radius:0!important}
+.custom-file-label.edit-img{top:165px !important;}
+.custom-file-label::after { content: "Der er ikke valgt nogen fil" !important; background-color: #F3EFEE; }
+
+
+input.cp-form-control { margin-bottom: 1rem; background-color: transparent; height: 48px; display: block; width: 100%; padding: .375rem .75rem; font-size: 16px; line-height: 1.5; color: #0a0a0a; background-clip: padding-box; border: 1px solid #a9a9a9; border-radius: 0; transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out }
+textarea.cp-form-control { padding: .375rem .75rem;width: 100%; background-color: transparent}
+select#category_id, select#club_id  {border: 1px solid #0a0a0a}
+a.trash{right:0;background:#ccc}
+
+.form-label-group.has-error .cp-form-control, .cp-form-label-group.has-error input, .cp-form-label-group.has-error textarea, .cp-form-label-group.has-error select {border-color: #f00;}
+.text-cancel{color: #CC0001}
+.text-completed{color: #21D932}
+.text-refund{color: #8B0000}
+
+::-webkit-input-placeholder { text-align: center }
+:-moz-placeholder { text-align: center }
+::-moz-placeholder { text-align: center }
+:-ms-input-placeholder { text-align: center }
+::-webkit-scrollbar { width: 5px }
+::-webkit-scrollbar-track { background: #f1f1f1; -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) }
+::-webkit-scrollbar-thumb { background: #888 }
+::-webkit-scrollbar-thumb:hover { background: #555 }
